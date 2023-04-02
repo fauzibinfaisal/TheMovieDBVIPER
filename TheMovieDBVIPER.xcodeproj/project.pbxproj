@@ -54,6 +54,9 @@
 		EB97674029D9E64C00B415FC /* MovieSearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97673F29D9E64C00B415FC /* MovieSearchEntity.swift */; };
 		EB97674229D9E65600B415FC /* MovieSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97674129D9E65600B415FC /* MovieSearchRouter.swift */; };
 		EB97674429D9E70800B415FC /* MovieSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97674329D9E70800B415FC /* MovieSearchResponse.swift */; };
+		EB97674A29DA369A00B415FC /* BannerCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97674929DA369A00B415FC /* BannerCarouselView.swift */; };
+		EB97674D29DA36B900B415FC /* BannerCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB97674B29DA36B900B415FC /* BannerCarouselCell.swift */; };
+		EB97674E29DA36B900B415FC /* BannerCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB97674C29DA36B900B415FC /* BannerCarouselCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		EB97673F29D9E64C00B415FC /* MovieSearchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchEntity.swift; sourceTree = "<group>"; };
 		EB97674129D9E65600B415FC /* MovieSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchRouter.swift; sourceTree = "<group>"; };
 		EB97674329D9E70800B415FC /* MovieSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResponse.swift; sourceTree = "<group>"; };
+		EB97674929DA369A00B415FC /* BannerCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCarouselView.swift; sourceTree = "<group>"; };
+		EB97674B29DA36B900B415FC /* BannerCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCarouselCell.swift; sourceTree = "<group>"; };
+		EB97674C29DA36B900B415FC /* BannerCarouselCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCarouselCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,9 +300,8 @@
 		EB9766F329D9CB2400B415FC /* ReusableView */ = {
 			isa = PBXGroup;
 			children = (
-				EB97672629D9CF7400B415FC /* MovieTableViewCell.swift */,
-				EB97672729D9CF7400B415FC /* MovieTableViewCell.xib */,
-				EB97672A29D9CF9000B415FC /* MovieCellModel.swift */,
+				EB97674629DA364F00B415FC /* MovieTableViewCell */,
+				EB97674529DA364600B415FC /* CarouselView */,
 			);
 			path = ReusableView;
 			sourceTree = "<group>";
@@ -399,6 +404,26 @@
 				EB97673829D9E62900B415FC /* MovieSearchViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EB97674529DA364600B415FC /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				EB97674929DA369A00B415FC /* BannerCarouselView.swift */,
+				EB97674B29DA36B900B415FC /* BannerCarouselCell.swift */,
+				EB97674C29DA36B900B415FC /* BannerCarouselCell.xib */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		EB97674629DA364F00B415FC /* MovieTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EB97672629D9CF7400B415FC /* MovieTableViewCell.swift */,
+				EB97672729D9CF7400B415FC /* MovieTableViewCell.xib */,
+				EB97672A29D9CF9000B415FC /* MovieCellModel.swift */,
+			);
+			path = MovieTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,6 +533,7 @@
 				EB97673A29D9E62900B415FC /* MovieSearchViewController.xib in Resources */,
 				EB97671D29D9CD8800B415FC /* MovieDetailViewController.xib in Resources */,
 				EB97670329D9CC6A00B415FC /* MovieListViewController.xib in Resources */,
+				EB97674E29DA36B900B415FC /* BannerCarouselCell.xib in Resources */,
 				EB97672929D9CF7400B415FC /* MovieTableViewCell.xib in Resources */,
 				EB9766BC29D9C89500B415FC /* LaunchScreen.storyboard in Resources */,
 				EB9766B929D9C89500B415FC /* Assets.xcassets in Resources */,
@@ -547,6 +573,7 @@
 				EB97670729D9CC8500B415FC /* MovieListPresenter.swift in Sources */,
 				EB9766F829D9CB7600B415FC /* MainTabBarViewController.swift in Sources */,
 				EB9766F129D9CAD800B415FC /* MovieDetailResponse.swift in Sources */,
+				EB97674D29DA36B900B415FC /* BannerCarouselCell.swift in Sources */,
 				EB97673429D9E50200B415FC /* Constants.swift in Sources */,
 				EB97670929D9CC8D00B415FC /* MovieListEntity.swift in Sources */,
 				EB97670229D9CC6A00B415FC /* MovieListViewController.swift in Sources */,
@@ -558,6 +585,7 @@
 				EB9766EF29D9CAC300B415FC /* MovieListReponse.swift in Sources */,
 				EB9766ED29D9CA8D00B415FC /* APIService.swift in Sources */,
 				EB9766E829D9CA3800B415FC /* Secrets.swift in Sources */,
+				EB97674A29DA369A00B415FC /* BannerCarouselView.swift in Sources */,
 				EB9766FE29D9CBA100B415FC /* MainTabBarRouter.swift in Sources */,
 				EB97670F29D9CD4200B415FC /* MovieFavoriteViewController.swift in Sources */,
 				EB97671829D9CD6B00B415FC /* MovieFavoriteRouter.swift in Sources */,

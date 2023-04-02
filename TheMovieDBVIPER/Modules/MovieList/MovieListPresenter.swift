@@ -13,6 +13,7 @@ protocol MovieListPresenterInterface {
     func getNumberOfRows () -> Int
     func getMovieItem (at index: Int) -> MovieListEntity
     func getNextMovieList (page: Int, count: Int)
+    func getMovieImages() -> [String]
     
 }
 
@@ -52,6 +53,10 @@ extension MovieListPresenter: MovieListPresenterInterface {
     
     func getNextMovieList(page: Int, count: Int) {
         self.interactor?.fetchMovieList(page: page, count: count)
+    }
+    
+    func getMovieImages() -> [String] {
+        return movieList.map { $0.backgroundImage ?? "-"}
     }
     
 }

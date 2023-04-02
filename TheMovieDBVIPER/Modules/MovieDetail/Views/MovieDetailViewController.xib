@@ -77,7 +77,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyi-Rs-8EJ">
                                             <rect key="frame" x="16" y="16" width="361" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>

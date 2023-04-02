@@ -73,7 +73,6 @@ class MovieDetailViewController: UIViewController {
     private func setupUI(){
         topRoundedView.layer.cornerRadius = 20
         topRoundedView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        
     }
     
     private func updateData(model: MovieDetailEntity){
@@ -83,7 +82,7 @@ class MovieDetailViewController: UIViewController {
 
             self.nameLabel.text = model.name
             self.releaseDateLabel.text = "Release Date : \(model.releaseDate)"
-            self.descriptionLabel.attributedText = model.movieDescription.htmlAttributedString()
+            self.descriptionLabel.text = model.movieDescription
         }
     }
 }
